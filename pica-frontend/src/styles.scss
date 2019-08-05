@@ -1,0 +1,120 @@
+// Colors
+$white: #ffffff;
+
+$green--500: #00703C;
+
+$gray--300: #808184;
+$gray--500: #58595B;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+button.btn.btn-primary {
+  background-color: $green--500;
+  color: $white;
+  border: 2px solid $green--500;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+button.btn.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid $green--500;
+  color: $green--500;
+  &:hover {
+    color: $white;
+    background-color: $green--500;
+  }
+}
+
+
+.header--banner {
+  background-color: $gray--500;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .banner--content {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    & p.content--text {
+      color: $white;
+      text-align: center;
+      margin: 0;
+      padding-right: 3rem;
+    }
+    & button.btn.btn-secondary.content--button {
+      border: 2px solid $white;
+      color: $white;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.navigation {
+  & nav #navbar-top {
+    height: 140px;
+    background-color: $white;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+  & nav a.navbar-brand {
+    width: 200px;
+    text-align: center;
+  }
+  & .navbar-collapse#secondary-navbar {
+    padding-right: 3rem;
+    & ul.navbar-nav {
+      & li.nav-item a {
+        color: $green--500;
+      }
+    }
+  }
+}
+
+ul.access-module--top {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  & li {
+    width: auto;
+    text-align: right;
+    margin-right: 1rem;
+    & a {
+      color: $green--500;
+    }
+  }
+  & li:nth-child(2) {
+    margin-right: 0;
+    &::before {
+      content: '';
+      width: 2px;
+      height: auto;
+      border-left: 2px solid $green--500;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.access-module--bottom {
+  & button {
+    margin: 0 0.5rem;
+  }
+  & :last-child {
+    margin-right: 0;
+  }
+}
