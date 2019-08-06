@@ -7,6 +7,7 @@
 .yt {
   @extend %fa-icon;
   @extend .fab;
+
   &:before {
     content: fa-content($fa-var-youtube);
   }
@@ -15,6 +16,7 @@
 .tw {
   @extend %fa-icon;
   @extend .fab;
+
   &:before {
     content: fa-content($fa-var-twitter);
   }
@@ -23,6 +25,7 @@
 .fb {
   @extend %fa-icon;
   @extend .fab;
+
   &:before {
     content: fa-content($fa-var-facebook-square);
   }
@@ -31,6 +34,7 @@
 .ln {
   @extend %fa-icon;
   @extend .fab;
+
   &:before {
     content: fa-content($fa-var-linkedin)
   }
@@ -39,6 +43,7 @@
 .mail {
   @extend %fa-icon;
   @extend .fas;
+
   &:before {
     content: fa-content($fa-var-envelope)
   }
@@ -58,7 +63,11 @@ $gray--500: #58595B;
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: $gray--300;
 }
 
@@ -213,7 +222,7 @@ ul.access-module--top {
   }
 }
 
-.lf--content-container {
+.social--container {
   padding-top: 2rem;
 
   & h1 {
@@ -253,19 +262,91 @@ ul.access-module--top {
 
       &:hover {
         cursor: pointer;
+
         &:before {
           color: $green--500;
         }
+
         &:after {
           border-color: $green--500;
         }
       }
 
-      &.fb:before, &.ln:before {
+      &.fb:before,
+      &.ln:before {
         right: 18px !important;
       }
+
       &.yt:before {
         right: 14px !important;
+      }
+    }
+  }
+}
+
+.services--container {
+  justify-content: center;
+  padding: 8rem 0 8rem 0;
+
+  & ul.services-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    & li.service {
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      border: 3px solid $green--500;
+      margin: 0 2rem;
+      text-align: center;
+      position: relative;
+      transition: background;
+      transition-duration: .25s;
+      transition-timing-function: ease-in-out;
+
+      & .service--icon {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        left: 2.4rem;
+        right: 0;
+        top: 2rem;
+
+        &.new-practitioner,
+        &.employed-practitioners,
+        &.group-practice {
+          top: 2.7rem;
+        }
+
+        &.group-practice {
+          width: 6rem;
+          left: 1.25rem;
+        }
+      }
+
+      & p {
+        position: absolute;
+        bottom: -5rem;
+        color: $green--500;
+        text-transform: uppercase;
+        width: 140px;
+      }
+
+      &:hover {
+        background: $green--500;
+        cursor: pointer;
+        & svg path {
+          opacity: 0;
+        }
+
+        &:before {
+          top: 3.5rem;
+          position: absolute;
+          content: 'Learn More';
+          color: #ffffff;
+          left: 30px;
+        }
       }
     }
   }
