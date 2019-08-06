@@ -1,3 +1,49 @@
+// FontAwesome iconset import
+@import "./assets/font-awesome/scss/fontawesome.scss";
+@import "./assets/font-awesome/scss/solid.scss";
+@import "./assets/font-awesome/scss/brands.scss";
+
+// FontAwesome Icon Sass @mixins
+.yt {
+  @extend %fa-icon;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-youtube);
+  }
+}
+
+.tw {
+  @extend %fa-icon;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
+
+.fb {
+  @extend %fa-icon;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-facebook-square);
+  }
+}
+
+.ln {
+  @extend %fa-icon;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-linkedin)
+  }
+}
+
+.mail {
+  @extend %fa-icon;
+  @extend .fas;
+  &:before {
+    content: fa-content($fa-var-envelope)
+  }
+}
+
 // Colors
 $white: #ffffff;
 
@@ -12,6 +58,10 @@ $gray--500: #58595B;
   box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5 {
+  color: $gray--300;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -22,6 +72,7 @@ button.btn.btn-primary {
   background-color: $green--500;
   color: $white;
   border: 2px solid $green--500;
+
   &:hover {
     opacity: 0.9;
   }
@@ -31,6 +82,7 @@ button.btn.btn-secondary {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid $green--500;
   color: $green--500;
+
   &:hover {
     color: $white;
     background-color: $green--500;
@@ -44,19 +96,23 @@ button.btn.btn-secondary {
   display: flex;
   align-items: center;
   justify-content: center;
+
   & .banner--content {
     display: flex;
     margin: 0 auto;
     align-items: center;
+
     & p.content--text {
       color: $white;
       text-align: center;
       margin: 0;
       padding-right: 3rem;
     }
+
     & button.btn.btn-secondary.content--button {
       border: 2px solid $white;
       color: $white;
+
       &:hover {
         opacity: 0.9;
       }
@@ -71,12 +127,15 @@ button.btn.btn-secondary {
     justify-content: space-between;
     padding: 0 3rem;
   }
+
   & nav a.navbar-brand {
     width: 200px;
     text-align: center;
   }
+
   & .navbar-collapse#secondary-navbar {
     padding-right: 3rem;
+
     & ul.navbar-nav {
       & li.nav-item a {
         color: $green--500;
@@ -90,16 +149,20 @@ ul.access-module--top {
   list-style: none;
   display: flex;
   justify-content: flex-end;
+
   & li {
     width: auto;
     text-align: right;
     margin-right: 1rem;
+
     & a {
       color: $green--500;
     }
   }
+
   & li:nth-child(2) {
     margin-right: 0;
+
     &::before {
       content: '';
       width: 2px;
@@ -114,13 +177,14 @@ ul.access-module--top {
   & button {
     margin: 0 0.5rem;
   }
+
   & :last-child {
     margin-right: 0;
   }
 }
 
 .content--container {
-  padding: 4rem;
+  padding: 2rem 4rem;
 }
 
 .hero--container {
@@ -130,17 +194,79 @@ ul.access-module--top {
     display: flex;
     object-fit: cover;
   }
+
   & .mainImage {
     max-height: 400px;
     height: 400px;
   }
+
   & .col img {
     max-height: 200px;
   }
+
   & img.sideImageTop {
     padding-bottom: 1rem;
   }
+
   & img.sideImageBottom {
     padding-top: 1rem;
+  }
+}
+
+.lf--content-container {
+  padding-top: 2rem;
+
+  & h1 {
+    text-align: center;
+  }
+
+  & ul.social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 1rem;
+
+    & li.social-icon {
+      position: relative;
+      font-size: 2rem;
+      width: 4rem;
+      height: 4rem;
+
+      &:before {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: $gray--300;
+      }
+
+      &:after {
+        position: absolute;
+        border: 4px solid $gray--300;
+        border-radius: 50%;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+        &:before {
+          color: $green--500;
+        }
+        &:after {
+          border-color: $green--500;
+        }
+      }
+
+      &.fb:before, &.ln:before {
+        right: 18px !important;
+      }
+      &.yt:before {
+        right: 14px !important;
+      }
+    }
   }
 }
