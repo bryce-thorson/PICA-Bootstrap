@@ -118,3 +118,26 @@ ul.access-module--top {
     margin-right: 0;
   }
 }
+
+.hero--container {
+  padding: 4rem 0;
+  & img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+  }
+  & .mainImage {
+    max-height: 400px;
+    height: 400px;
+  }
+  & .col img {
+    max-height: 200px;
+  }
+  & img.sideImageTop {
+    padding-bottom: 1rem;
+  }
+  & img.sideImageBottom {
+    padding-top: 1rem;
+  }
+}
