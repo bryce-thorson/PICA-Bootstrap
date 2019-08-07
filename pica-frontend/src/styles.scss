@@ -142,8 +142,14 @@ button.btn.btn-secondary {
     text-align: center;
   }
 
+  & nav.secondary-navbar {
+    border-top: 1px solid $green--500;
+    border-bottom: 1px solid $green--500;
+    padding: 0;
+  }
+
   & .navbar-collapse#secondary-navbar {
-    padding-right: 3rem;
+    padding-right: 3.5rem;
 
     & ul.navbar-nav {
       & li.nav-item a {
@@ -287,14 +293,33 @@ ul.access-module--top {
 .services--container {
   justify-content: center;
   padding: 8rem 0 4rem 0;
+
   & .service {
     display: block;
     text-align: center;
+    position: relative;
+    transition: all 0.8s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .service--icon {
+      transform: translateY(-50px) scale(1.1);
+    }
+
+    &:hover h5.service--title {
+      color: $green--500;
+    }
+
     & .service--icon {
       width: 148px;
       height: 148px;
       margin: 0 auto;
       position: relative;
+      transition: transform 0.8s ease;
+
+
       &:after {
         width: 100%;
         height: 100%;
@@ -307,41 +332,59 @@ ul.access-module--top {
         top: 0;
         bottom: 0;
       }
+
+      &.new-practitioner svg {
+        margin-top: 2rem;
+      }
+
+      &.group-practice svg {
+        width: 120px;
+      }
+
       & svg {
-        width: 100px;
-        height: 100px;
-        margin-top: 1rem;
+        width: 92px;
+        height: 92px;
+        margin-top: 1.5rem;
       }
     }
-    & .service--title {
+
+    & h5.service--title {
       text-transform: uppercase;
       margin-top: 1.5rem;
     }
+
     & button.service--button {
-      margin-top: 1rem;
+      position: absolute;
+      left: 25%;
+      bottom: -4rem;
     }
   }
 }
 
 
 .services--content {
-  padding: 8rem 0 4rem 0;
+  padding: 10rem 0 4rem 0;
+
   & .content--p {
     line-height: 1.5rem;
   }
 }
 
 footer {
-  height: 400px;
+  height: 800px;
   width: 100vw;
   background-color: $gray--500;
   color: $white;
   padding: 4rem 0;
+
   & .sitemap--container {
+    justify-content: center;
+
     & ul.categories {
       list-style: none;
-      display: flex;
-      text-align: center;
+      text-align: left;
+      padding-left: 4rem;
+
       & li.category {
         & ul {
           list-style: none;
@@ -349,7 +392,88 @@ footer {
           padding-left: 0;
         }
       }
+
+      & h5 {
+        color: $white;
+      }
+    }
+  }
+
+  & .logo--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+
+    & .partner-logo {
+      max-width: 200px;
+      margin: 0 2rem;
+
+      &.ward {
+        max-width: 160px;
+      }
+
+      &.pro-assurance {
+        max-width: 300px;
+      }
+
+      &.ward svg path,
+      &.pro-assurance svg path {
+        fill: $white;
+      }
+
+      &.pro-assurance svg path:nth-child(3) {
+        fill: rgba(0, 0, 0, 0);
+        stroke: $white;
+      }
+    }
+  }
+
+  & .social--container-footer {
+    justify-content: center;
+
+    & ul.social-links {
+      display: flex;
+
+      & li.social-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  & .footer--information {
+    justify-content: center;
+    text-align: center;
+
+    & .copyright-area {
+      display: flex;
+      justify-content: center;
+
+      & p:first-child {
+        margin-right: 1rem;
+      }
+
+      & p a {
+        color: $white;
+        margin: 0 1rem;
+        position: relative;
+
+        &:before {
+          position: absolute;
+          left: -1rem;
+          top: 0;
+          bottom: 0;
+          border-left: 1px solid $white;
+          content: '';
+        }
+      }
+    }
+
+    & .address-area p a,
+    & .phone-area p a {
+      color: $white;
     }
   }
 }
-
