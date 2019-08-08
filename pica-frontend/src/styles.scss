@@ -72,9 +72,15 @@ $gray--500: #58595B;
   box-sizing: border-box;
 }
 
-h1,
+h1 {
+  font-size: 3rem;
+}
+
+h1,h3 {
+  color: $green--500;
+}
+
 h2,
-h3,
 h4,
 h5 {
   color: $gray--300;
@@ -445,10 +451,15 @@ ul.access-module--top {
   }
 
   & .services--content {
-    padding: 10rem 0 4rem 0;
+    padding: 10rem 4rem;
 
     & .content--p {
       line-height: 1.5rem;
+    }
+    & img.content-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -574,7 +585,7 @@ footer {
 
   & h1.page-title {
     position: absolute;
-    top: 35%;
+    top: 30%;
     background-color: rgba(255, 255, 255, 0.8);
     left: 0;
     right: 0;
@@ -583,4 +594,8 @@ footer {
     color: $green--500;
     font-weight: 300;
   }
+}
+
+.contact-container {
+  padding: 4rem;
 }
