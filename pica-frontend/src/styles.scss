@@ -76,7 +76,8 @@ h1 {
   font-size: 3rem;
 }
 
-h1,h3 {
+h1,
+h3 {
   color: $green--500;
 }
 
@@ -90,6 +91,11 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+}
+
+button.btn.btn-primary,
+button.btn.btn-secondary {
+  min-width: 150px;
 }
 
 button.btn.btn-primary {
@@ -456,6 +462,7 @@ ul.access-module--top {
     & .content--p {
       line-height: 1.5rem;
     }
+
     & img.content-image {
       width: 100%;
       height: 100%;
@@ -598,4 +605,53 @@ footer {
 
 .contact-container {
   padding: 4rem;
+}
+
+.login--container {
+  & nav.breadcrumb {
+    background: none;
+    padding: 2rem 4rem 0 4rem;
+    text-transform: uppercase;
+
+    & a.breadcrumb-item {
+      color: $green--500;
+    }
+  }
+
+  & .login--content {
+    position: relative;
+    padding-bottom: 4rem;
+    & .manage-payments,
+    & .one-time-payment {
+      padding: 4rem;
+    }
+
+    & .manage-payments {
+      &:before {
+        content: 'OR';
+        background-color: #ffffff;
+        color: #808184;
+        position: absolute;
+        right: -2rem;
+        top: 10rem;
+        width: 50px;
+        height: auto;
+        z-index: 10;
+        font-size: 1.5rem;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        background-color: $green--500;
+        right: 0;
+        top: 2rem;
+        bottom: 2rem;
+      }
+      & a {
+        color: $green--500;
+      }
+    }
+  }
 }
