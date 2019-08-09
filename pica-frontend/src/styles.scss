@@ -61,6 +61,7 @@
 // Colors
 $white: #ffffff;
 
+$green--300: #54B848;
 $green--500: #00703C;
 
 $gray--300: #808184;
@@ -621,6 +622,7 @@ footer {
   & .login--content {
     position: relative;
     padding-bottom: 4rem;
+
     & .manage-payments,
     & .one-time-payment {
       padding: 4rem;
@@ -649,8 +651,43 @@ footer {
         top: 2rem;
         bottom: 2rem;
       }
+
       & a {
         color: $green--500;
+      }
+    }
+  }
+}
+
+.login-landing--container {
+  padding: 4rem;
+  & .col-lg-9 {
+    padding-left: 4rem; 
+    & .tab-content {
+      & .tab-pane {
+        & h3.subtitle {
+          color: $gray--500;
+          text-decoration: uppercase;
+        }
+        & .cta-area {
+          width: 100%;
+          display: flex;
+          object-fit: cover;
+          height: 400px;
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+  & .nav.nav-pills {
+    color: $white;
+    & .nav-link {
+      background-color: $green--500;
+      color: $white;
+      border-radius: 0;
+      border: 1px solid $white;
+        &.active {
+          background-color: $green--300;
       }
     }
   }
