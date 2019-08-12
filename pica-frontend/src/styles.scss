@@ -661,14 +661,17 @@ footer {
 
 .login-landing--container {
   padding: 4rem;
+
   & .col-lg-9 {
-    padding-left: 4rem; 
+    padding-left: 4rem;
+
     & .tab-content {
       & .tab-pane {
         & h3.subtitle {
           color: $gray--500;
           text-decoration: uppercase;
         }
+
         & .cta-area {
           width: 100%;
           display: flex;
@@ -676,18 +679,46 @@ footer {
           height: 400px;
           margin: 2rem 0;
         }
+
+        & p {
+          margin: 0;
+        }
+
+        & .accordion {
+          border-bottom: 1px solid rgba(0, 0, 0, .125);
+        }
+        & a {
+          color: $green--500;
+        }
+        & label {
+          font-weight: bold;
+          color: $gray--500;
+        }
+        & .card {
+          & .card-header {
+            & button.btn.btn-link {
+              text-transform: uppercase;
+              color: $gray--500;
+              font-size: 1.5rem;
+            }
+          }
+        }
       }
     }
   }
+
   & .nav.nav-pills {
     color: $white;
+
     & .nav-link {
       background-color: $green--500;
       color: $white;
       border-radius: 0;
       border: 1px solid $white;
-        &.active {
-          background-color: $green--300;
+      padding: 1rem;
+
+      &.active {
+        background-color: $green--300;
       }
     }
   }

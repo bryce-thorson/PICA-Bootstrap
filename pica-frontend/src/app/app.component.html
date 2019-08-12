@@ -22,8 +22,12 @@
 
         <div class="access-module">
           <ul class="access-module--top">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Report a Claim</a></li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#">Report a Claim</a>
+            </li>
           </ul>
           <div class="access-module--bottom">
             <button class="btn btn-primary">Start a Quote</button>
@@ -96,14 +100,14 @@
       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
           aria-selected="true">Home</a>
-        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+        <a class="nav-link" id="v-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-payments"
           aria-selected="false">My Payments</a>
         <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
           aria-selected="false">Account Summary</a>
         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
           aria-selected="false">Certificates of Insurance</a>
         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-        aria-selected="false">Policy Renewal</a>
+          aria-selected="false">Policy Renewal</a>
         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
           aria-selected="false">Policy Documents</a>
         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
@@ -118,9 +122,12 @@
           <h1 class="title">Welcome, userName!</h1>
           <h3 class="subtitle">lorem ipsum dolor emit</h3>
           <p class="description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam maxime fuga est odit eligendi esse ad accusamus quam, debitis aliquid quas perspiciatis magnam voluptas corporis! Magnam animi qui eum molestiae!
-            Sunt soluta quidem accusamus. Delectus ab rem ipsam sunt, et quae nesciunt hic sapiente quasi commodi. Laborum quos minima consequuntur possimus, quidem labore, blanditiis inventore qui accusamus asperiores fugit eveniet.
-            Totam rerum maiores reprehenderit magnam? Obcaecati culpa aspernatur commodi, corporis dolorum quos nostrum nihil recusandae sunt molestias eius ut officiis quaerat necessitatibus, omnis natus facere qui perferendis voluptatum, unde velit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam maxime fuga est odit eligendi esse ad accusamus quam, debitis
+            aliquid quas perspiciatis magnam voluptas corporis! Magnam animi qui eum molestiae! Sunt soluta quidem accusamus.
+            Delectus ab rem ipsam sunt, et quae nesciunt hic sapiente quasi commodi. Laborum quos minima consequuntur possimus,
+            quidem labore, blanditiis inventore qui accusamus asperiores fugit eveniet. Totam rerum maiores reprehenderit
+            magnam? Obcaecati culpa aspernatur commodi, corporis dolorum quos nostrum nihil recusandae sunt molestias eius
+            ut officiis quaerat necessitatibus, omnis natus facere qui perferendis voluptatum, unde velit.
           </p>
           <div class="cta-area">
             <img src="https://source.unsplash.com/weekly?lake" alt="" class="cta-img">
@@ -129,10 +136,105 @@
             <img src="https://source.unsplash.com/weekly?slope" alt="" class="cta-img">
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payments-tab">
+          <h1 class="title pb-4">My Payments</h1>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <p>Amounts may not reflect payments or policy changes made in the last 48 hours.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pt-4">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header pl-2" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Billing Summary
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label for="policy-term">Current Policy Term:</label>
+                          <p class="policy-term">07/03/2019 - 07/03/2020</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="amount-due">Amount Due:</label>
+                          <p class="amount-due">$0.00</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="total-balance">Total Balance:</label>
+                          <p class="total-balance">$4,145.00</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="due-date">Due Date:</label>
+                          <p class="due-date">N/A</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <p class="autopay-enroll">
+                            You are not currently enrolled in automated payments.
+                            <a href="#">Click here</a> to enroll.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header p-4 text-center">
+                  <p class="pb-4">To make a payment, manage auto-payment, or update your notification preferences, click the “Manage Payments” button below.</p>
+                  <button class="btn btn-secondary">Manage Payments</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="policy-accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Policy Invoice Address
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#policy-accordion">
+                    <div class="card-body address">
+                      <a href="https://goo.gl/maps/LYgtdvNE1Km1SUD7A">3000 Meridian Blvd.<br>Ste. 400<br>Franklin, TN 37067</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="payment-history pt-4">
+                <a href="#">View Payment History</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-account-summary" role="tabpanel" aria-labelledby="v-pills-account-summary-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-certificates" role="tabpanel" aria-labelledby="v-pills-certificates-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-policy-renewal" role="tabpanel" aria-labelledby="v-pills-policy-renewal-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-policy-documents" role="tabpanel" aria-labelledby="v-pills-policy-documents-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-document-preferences" role="tabpanel" aria-labelledby="v-pills-document-preferences-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-user-profile" role="tabpanel" aria-labelledby="v-pills-user-profile-tab">...</div>
       </div>
     </div>
   </div>
