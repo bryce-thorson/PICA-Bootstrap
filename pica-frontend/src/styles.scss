@@ -341,14 +341,14 @@ ul.access-module--top {
 
     & li.social-icon {
       position: relative;
-      font-size: 2rem;
-      width: 4rem;
-      height: 4rem;
+      font-size: 1.5rem;
+      width: 3rem;
+      height: 3rem;
 
       &:before {
         position: absolute;
-        right: 1rem;
-        top: 1rem;
+        right: 0.8rem;
+        top: 0.8rem;
         color: $gray--300;
       }
 
@@ -377,11 +377,11 @@ ul.access-module--top {
 
       &.fb:before,
       &.ln:before {
-        right: 18px !important;
+        right: 14px !important;
       }
 
       &.yt:before {
-        right: 14px !important;
+        right: 10px !important;
       }
     }
   }
@@ -451,9 +451,7 @@ ul.access-module--top {
     }
 
     & button.service--button {
-      position: absolute;
-      left: 25%;
-      bottom: -4rem;
+      margin-top: 1rem;
     }
   }
 
@@ -580,27 +578,46 @@ footer {
   }
 }
 
-.innerpage--hero-section {
+
+.innerpage-container {
   position: relative;
-  justify-content: center;
 
-  & img.background-image {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    object-fit: cover;
-  }
-
-  & h1.page-title {
+  & nav.breadcrumb.row {
     position: absolute;
-    top: 30%;
     background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
     left: 0;
     right: 0;
-    text-align: center;
-    padding: 2rem 0;
-    color: $green--500;
-    font-weight: 300;
+    padding-left: 2rem;
+    z-index: 10;
+
+    & a.breadcrumb-item {
+      color: $green--500;
+    }
+  }
+
+  & .innerpage--hero-section {
+    position: relative;
+    justify-content: center;
+
+    & img.background-image {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      object-fit: cover;
+    }
+
+    & h1.page-title {
+      position: absolute;
+      top: 30%;
+      background-color: rgba(255, 255, 255, 0.8);
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 2rem 0;
+      color: $green--500;
+      font-weight: 300;
+    }
   }
 }
 
@@ -687,13 +704,16 @@ footer {
         & .accordion {
           border-bottom: 1px solid rgba(0, 0, 0, .125);
         }
+
         & a {
           color: $green--500;
         }
+
         & label {
           font-weight: bold;
           color: $gray--500;
         }
+
         & .card {
           & .card-header {
             & button.btn.btn-link {
