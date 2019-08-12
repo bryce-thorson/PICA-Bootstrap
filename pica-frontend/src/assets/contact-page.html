@@ -1,29 +1,58 @@
-<section class="container-fluid">
+<section class="container-fluid contact-container">
   <div class="services--content row">
+    <nav class="breadcrumb row">
+      <a class="breadcrumb-item" href="#">Home</a>
+      <span class="breadcrumb-item active">[Content Page]</span>
+    </nav>
+    <h1 class="col-lg-12">Header</h1>
     <h2 class="content--title col-lg-6">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</h2>
     <div class="row m-0">
       <div class="content--p col-lg-6">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem at assumenda facere esse, harum iste dolore eos
           nesciunt ut nobis placeat tempora distinctio illo pariatur ratione obcaecati vero unde rerum.Reiciendis repellat
           minus libero, tempore commodi, hic exercitationem, corrupti cum velit dolore voluptates minima voluptatem doloribus
-          harum! Molestiae cupiditate adipisci non quibusdam omnis optio, ad, vero obcaecati reprehenderit deserunt suscipit.</p>
+          harum! Molestiae cupiditate adipisci non quibusdam omnis optio, ad, vero obcaecati reprehenderit deserunt suscipit.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem at assumenda facere esse, harum iste dolore eos
+          nesciunt ut nobis placeat tempora distinctio illo pariatur ratione obcaecati vero unde rerum.Reiciendis repellat
+          minus libero, tempore commodi, hic exercitationem, corrupti cum velit dolore voluptates minima voluptatem doloribus
+          harum! Molestiae cupiditate adipisci non quibusdam omnis optio, ad, vero obcaecati reprehenderit deserunt suscipit.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem at assumenda facere esse, harum iste dolore eos
+          nesciunt ut nobis placeat tempora distinctio illo pariatur ratione obcaecati vero unde rerum.Reiciendis repellat
+          minus libero, tempore commodi, hic exercitationem, corrupti cum velit dolore voluptates minima voluptatem doloribus
+          harum! Molestiae cupiditate adipisci non quibusdam omnis optio, ad, vero obcaecati reprehenderit deserunt suscipit.
+        </p>
       </div>
       <div class="content--form col-lg-6">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="firstName">First Name</label>
+            <input class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter last name">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone</label>
+            <input type="number" class="form-control" id="phoneNumber" aria-describedby="emailHelp" placeholder="Enter phone #">
+          </div>
+          <div class="form-group">
+            <label for="emailAddress">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="confirmEmail">Confirm Email Address</label>
+            <input type="email" class="form-control" id="confirmEmail" placeholder="Confirm Email">
           </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <div class="notice">
+            <small>
+              <em>* indicates required field</em>
+            </small>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-secondary float-right">Submit</button>
         </form>
       </div>
     </div>
