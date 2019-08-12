@@ -622,124 +622,134 @@ footer {
 }
 
 .contact-container {
-  padding: 4rem;
-}
+  padding: 2rem 4rem 4rem 4rem;
 
-.login--container {
   & nav.breadcrumb {
     background: none;
-    padding: 2rem 4rem 0 4rem;
+    padding: 0rem 2rem 0 2rem;
     text-transform: uppercase;
 
     & a.breadcrumb-item {
       color: $green--500;
     }
   }
+}
 
-  & .login--content {
-    position: relative;
-    padding-bottom: 4rem;
+  .login--container {
+    & nav.breadcrumb {
+      background: none;
+      padding: 2rem 4rem 0 4rem;
+      text-transform: uppercase;
 
-    & .manage-payments,
-    & .one-time-payment {
-      padding: 4rem;
-    }
-
-    & .manage-payments {
-      &:before {
-        content: 'OR';
-        background-color: #ffffff;
-        color: #808184;
-        position: absolute;
-        right: -2rem;
-        top: 10rem;
-        width: 50px;
-        height: auto;
-        z-index: 10;
-        font-size: 1.5rem;
-      }
-
-      &:after {
-        position: absolute;
-        content: '';
-        width: 1px;
-        background-color: $green--500;
-        right: 0;
-        top: 2rem;
-        bottom: 2rem;
-      }
-
-      & a {
+      & a.breadcrumb-item {
         color: $green--500;
       }
     }
-  }
-}
 
-.login-landing--container {
-  padding: 4rem;
+    & .login--content {
+      position: relative;
+      padding-bottom: 4rem;
 
-  & .col-lg-9 {
-    padding-left: 4rem;
+      & .manage-payments,
+      & .one-time-payment {
+        padding: 4rem;
+      }
 
-    & .tab-content {
-      & .tab-pane {
-        & h3.subtitle {
-          color: $gray--500;
-          text-decoration: uppercase;
+      & .manage-payments {
+        &:before {
+          content: 'OR';
+          background-color: #ffffff;
+          color: #808184;
+          position: absolute;
+          right: -2rem;
+          top: 10rem;
+          width: 50px;
+          height: auto;
+          z-index: 10;
+          font-size: 1.5rem;
         }
 
-        & .cta-area {
-          width: 100%;
-          display: flex;
-          object-fit: cover;
-          height: 400px;
-          margin: 2rem 0;
-        }
-
-        & p {
-          margin: 0;
-        }
-
-        & .accordion {
-          border-bottom: 1px solid rgba(0, 0, 0, .125);
+        &:after {
+          position: absolute;
+          content: '';
+          width: 1px;
+          background-color: $green--500;
+          right: 0;
+          top: 2rem;
+          bottom: 2rem;
         }
 
         & a {
           color: $green--500;
         }
+      }
+    }
+  }
 
-        & label {
-          font-weight: bold;
-          color: $gray--500;
-        }
+  .login-landing--container {
+    padding: 4rem;
 
-        & .card {
-          & .card-header {
-            & button.btn.btn-link {
-              text-transform: uppercase;
-              color: $gray--500;
-              font-size: 1.5rem;
+    & .col-lg-9 {
+      padding-left: 4rem;
+
+      & .tab-content {
+        & .tab-pane {
+          & h3.subtitle {
+            color: $gray--500;
+            text-decoration: uppercase;
+          }
+
+          & .cta-area {
+            width: 100%;
+            display: flex;
+            object-fit: cover;
+            height: 400px;
+            margin: 2rem 0;
+          }
+
+          & p {
+            margin: 0;
+          }
+
+          & .accordion {
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+          }
+
+          & a {
+            color: $green--500;
+          }
+
+          & label {
+            font-weight: bold;
+            color: $gray--500;
+          }
+
+          & .card {
+            & .card-header {
+              & button.btn.btn-link {
+                text-transform: uppercase;
+                color: $gray--500;
+                font-size: 1.5rem;
+              }
             }
           }
         }
       }
     }
-  }
 
-  & .nav.nav-pills {
-    color: $white;
-
-    & .nav-link {
-      background-color: $green--500;
+    & .nav.nav-pills {
       color: $white;
-      border-radius: 0;
-      border: 1px solid $white;
-      padding: 1rem;
 
-      &.active {
-        background-color: $green--300;
+      & .nav-link {
+        background-color: $green--500;
+        color: $white;
+        border-radius: 0;
+        border: 1px solid $white;
+        padding: 1rem;
+
+        &.active {
+          background-color: $green--300;
+        }
       }
     }
   }
-}

@@ -76,7 +76,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Why PICA?</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Why PICA?</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -85,7 +86,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Resources</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -101,7 +103,7 @@
     </nav>
   </div>
 </header>
- <section class="container-fluid login-landing--container">
+<!-- <section class="container-fluid login-landing--container">
   <div class="row">
     <div class="col-lg-3">
       <div class="login-information">
@@ -114,7 +116,7 @@
           aria-selected="true">Home</a>
         <a class="nav-link" id="v-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-payments"
           aria-selected="false">My Payments</a>
-        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-account-summary" role="tab" aria-controls="v-pills-messages"
           aria-selected="false">Account Summary</a>
         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
           aria-selected="false">Certificates of Insurance</a>
@@ -210,7 +212,8 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header p-4 text-center">
-                  <p class="pb-4">To make a payment, manage auto-payment, or update your notification preferences, click the “Manage Payments” button below.</p>
+                  <p class="pb-4">To make a payment, manage auto-payment, or update your notification preferences, click the “Manage Payments”
+                    button below.</p>
                   <button class="btn btn-secondary">Manage Payments</button>
                 </div>
               </div>
@@ -225,10 +228,12 @@
                       </button>
                     </h2>
                   </div>
-              
+
                   <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#policy-accordion">
                     <div class="card-body address">
-                      <a href="https://goo.gl/maps/LYgtdvNE1Km1SUD7A">3000 Meridian Blvd.<br>Ste. 400<br>Franklin, TN 37067</a>
+                      <a href="https://goo.gl/maps/LYgtdvNE1Km1SUD7A">3000 Meridian Blvd.
+                        <br>Ste. 400
+                        <br>Franklin, TN 37067</a>
                     </div>
                   </div>
                 </div>
@@ -241,7 +246,168 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-account-summary" role="tabpanel" aria-labelledby="v-pills-account-summary-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-account-summary" role="tabpanel" aria-labelledby="v-pills-account-summary-tab">
+          <h1 class="title">Account Summary</h1>
+          <div class="row">
+            <div class="col-lg-12 pt-4">
+              <div class="accordion" id="policy-details">
+                <div class="card">
+                  <div class="card-header pl-2" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse--policy" aria-expanded="true" aria-controls="collapse--policy">
+                        Policy Details
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse--policy" class="collapse show" aria-labelledby="headingThree" data-parent="#policy-details">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label for="policy-number">Policy Number:</label>
+                          <p class="policy-number">1234ABCD56789</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="insured-name">Insured Name</label>
+                          <p class="insured-name">Jane Doe</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="policy-term">Policy Term:</label>
+                          <p class="policy-term">5 years</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="agent-name">Agent:</label>
+                          <p class="agent-name">John Doe</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="office-address">Primary Office Address:</label>
+                          <p class="office-address">
+                             123 Any Street <br> Suite #1234 <br> Cityname, XX 12345-1234
+                          </p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="agent-name">Mailing Address:</label>
+                          <p class="agent-name">Same as primary</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="alt-address">Additional Practice Address(es):</label>
+                          <p class="alt-address">None</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="agent-name">Billing Address:</label>
+                          <p class="agent-name">Same as primary</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-lg-12 pt-4">
+              <div class="accordion" id="coverage-information">
+                <div class="card">
+                  <div class="card-header pl-2" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse--coverage" aria-expanded="true"
+                        aria-controls="collapse--coverage">
+                        Coverage Information
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse--coverage" class="collapse show" aria-labelledby="headingThree" data-parent="#coverage-information">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label for="retro-date">Retro Date:</label>
+                          <p class="retro-date">07/03/2000</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="policy-type">Policy Type:</label>
+                          <p class="policy-type">Surgical</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="claims-limits">Claims Made Limits:</label>
+                          <p class="claims-limits">$1,000,000 per claim / $3,000,000 aggregate</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="due-date">Shared Limit Coporations:</label>
+                          <p class="due-date">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="supplemental-coverage-limits">Supplemental Coverage(s) and Limits (Incident / Aggregate):</label>
+                          <p class="supplemental-coverage-limits">Administrative Defense Coverage Help $100,000 / $100,000 Cyber Liability $50,000 / $50,000</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="mailing-address">Mailing Address:</label>
+                          <p class="mailing-address">Same as primary</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-lg-12 pt-4">
+              <div class="accordion" id="coi-holders">
+                <div class="card">
+                  <div class="card-header pl-2" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse--coi" aria-expanded="true"
+                        aria-controls="collapse--coi">
+                        COI Holders
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse--coi" class="collapse" aria-labelledby="headingThree" data-parent="#coi-holders">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label for="policy-term">Current Policy Term:</label>
+                          <p class="policy-term">07/03/2019 - 07/03/2020</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="amount-due">Amount Due:</label>
+                          <p class="amount-due">$0.00</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <label for="total-balance">Total Balance:</label>
+                          <p class="total-balance">$4,145.00</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="due-date">Due Date:</label>
+                          <p class="due-date">N/A</p>
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-6">
+                          <p class="autopay-enroll">
+                            You are not currently enrolled in automated payments.
+                            <a href="#">Click here</a> to enroll.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="tab-pane fade" id="v-pills-certificates" role="tabpanel" aria-labelledby="v-pills-certificates-tab">...</div>
         <div class="tab-pane fade" id="v-pills-policy-renewal" role="tabpanel" aria-labelledby="v-pills-policy-renewal-tab">...</div>
         <div class="tab-pane fade" id="v-pills-policy-documents" role="tabpanel" aria-labelledby="v-pills-policy-documents-tab">...</div>
@@ -278,8 +444,12 @@
     </div>
   </div>
 </section> -->
-<!-- <section class="container-fluid contact-container">
+ <section class="container-fluid contact-container">
   <div class="services--content row">
+    <nav class="breadcrumb row">
+      <a class="breadcrumb-item" href="#">Home</a>
+      <span class="breadcrumb-item active">Payments</span>
+    </nav>
     <h1 class="col-lg-12">Header</h1>
     <h2 class="content--title col-lg-6">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</h2>
     <div class="row m-0">
@@ -546,7 +716,7 @@
     </div>
   </div>
 </section> -->
- <!-- <section class="container-fluid content--container">
+<!-- <section class="container-fluid content--container">
   <div class="hero--container row">
     <div class="mainImage col-lg-6">
       <img src="https://source.unsplash.com/weekly?wellness" alt="">
