@@ -58,6 +58,15 @@
   }
 }
 
+.search {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-search);
+  }
+}
+
 // Color variables
 $white: #ffffff;
 
@@ -135,8 +144,10 @@ button.btn.btn-secondary {
 
     & p.content--text {
       color: $white;
-      text-align: center;
+      width: 100%;
       margin: 0;
+      font-size: 0.9rem;
+      width: 680px;
       padding-right: 3rem;
     }
 
@@ -151,12 +162,49 @@ button.btn.btn-secondary {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .header--banner {
+    padding: 0 1rem;
+    font-size: 0.7rem;
+    & .banner--content {
+      text-align: center;
+      align-items: center;
+      & p.content--text {
+        padding: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+
+      }
+      & button {
+        width: 100px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 .navigation {
   & nav #navbar-top {
     height: 140px;
     background-color: $white;
     justify-content: space-between;
     padding: 0 3rem;
+
+    & form {
+      margin-left: 20%;
+      position: relative;
+      & input.form-control {
+        border: 2px solid $gray--300;
+        width: 100%;
+        padding: 1.5rem;
+        padding-left: 0.5rem;
+      }
+      & .search {
+        position: absolute;
+        right: 2.5rem;
+        color: $gray--300;
+      }
+    }
   }
 
   & nav a.navbar-brand {
