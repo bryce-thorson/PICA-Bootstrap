@@ -223,7 +223,7 @@ ul.access-module--top {
 
 .access-module--phone {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   padding: 1rem 0 0 0;
 
@@ -324,6 +324,54 @@ ul.access-module--top {
     }
   }
 }
+
+ @media only screen and (max-width: 992px) {
+  .content--container {
+    padding: 1rem;
+  }  
+  .hero--container {
+      & .col-lg-6 {
+        &.mainImage {
+          position: relative;
+          padding-bottom: 1rem;
+          & button {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+          }
+        }
+
+        & .sideImageTop {
+          position: relative;
+
+          & button {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+          }
+        }
+
+        & .sideImageBottom {
+          position: relative;
+
+          & button {
+            position: absolute;
+            bottom: 1rem;
+            right: 2rem;
+          }
+        }
+
+        & .sideImageBottom img {
+          padding-top: 1rem;
+        }
+
+        & .sideImageTop img {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
 
 .social--container {
   padding-top: 2rem;
@@ -448,6 +496,7 @@ ul.access-module--top {
     & h5.service--title {
       text-transform: uppercase;
       margin-top: 1.5rem;
+      min-height: 4rem;
     }
 
     & button.service--button {
@@ -469,6 +518,18 @@ ul.access-module--top {
     }
   }
 }
+
+ @media only screen and (max-width: 992px) {
+    .services--container {
+      & .service {
+        padding: 2rem 0;
+
+        & button.service--button {
+            margin-top: 0.25rem;
+        }
+      }
+    }
+  }
 
 footer {
   height: 800px;
