@@ -85,6 +85,11 @@ $gray--500: #58595B;
 h1 {
   font-size: 3rem;
 }
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 
 h1,
 h3 {
@@ -196,6 +201,7 @@ button.btn.btn-secondary {
       & input.form-control {
         border: 2px solid $gray--300;
         width: 100%;
+        min-width: 300px;
         padding: 1.5rem;
         padding-left: 0.5rem;
       }
@@ -433,7 +439,7 @@ ul.access-module--top {
     justify-content: space-between;
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding: 0;
 
     & li.social-icon {
       position: relative;
@@ -443,7 +449,7 @@ ul.access-module--top {
 
       &:before {
         position: absolute;
-        right: 0.8rem;
+        right: 11px;
         top: 0.8rem;
         color: $gray--300;
       }
@@ -473,7 +479,7 @@ ul.access-module--top {
 
       &.fb:before,
       &.ln:before {
-        right: 14px !important;
+        right: 13px !important;
       }
 
       &.yt:before {
@@ -485,7 +491,7 @@ ul.access-module--top {
 
 .services--container {
   justify-content: center;
-  padding: 8rem 0 4rem 0;
+  padding: 4rem 0;
 
   & .service {
     display: block;
@@ -553,7 +559,7 @@ ul.access-module--top {
   }
 
   & .services--content {
-    padding: 10rem 4rem;
+    padding: 4rem;
 
     & .content--p {
       line-height: 1.5rem;
@@ -569,6 +575,7 @@ ul.access-module--top {
 
  @media only screen and (max-width: 992px) {
     .services--container {
+      padding: 2rem 0;
       & .service {
         padding: 2rem 0;
 
