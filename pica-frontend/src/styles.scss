@@ -194,7 +194,9 @@ button.btn.btn-secondary {
     background-color: $white;
     justify-content: space-between;
     padding: 0 3rem;
-
+    & ul.navbar-nav {
+      display: none;
+    }
     & form {
       margin-left: 20%;
       position: relative;
@@ -232,6 +234,15 @@ button.btn.btn-secondary {
       & li.nav-item a {
         color: $green--500;
       }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navigation {
+    & nav #navbar-top {
+      & ul.navbar-nav {
+      display: block;
+    }
     }
   }
 }
@@ -587,7 +598,8 @@ ul.access-module--top {
   }
 
 footer {
-  height: 800px;
+  min-height: 800px;
+  height: 100%;
   width: 100vw;
   background-color: $gray--500;
   color: $white;
@@ -693,6 +705,23 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  footer {
+   & .sitemap--container {
+      & ul.categories {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    & .logo--container {
+        & .partner-logo {
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
 
 
 .innerpage-container {
