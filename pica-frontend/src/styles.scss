@@ -169,7 +169,7 @@ button.btn.btn-secondary {
 
 @media only screen and (max-width: 992px) {
   .header--banner {
-    padding: 0 1rem;
+    padding: 5rem 2rem;
     font-size: 0.7rem;
     & .banner--content {
       text-align: center;
@@ -185,6 +185,13 @@ button.btn.btn-secondary {
         margin: 0 auto;
       }
     }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header--banner {
+    padding: 4rem 2rem;
+    text-align: left;
+    font-size: 0.7rem;
   }
 }
 
@@ -237,12 +244,21 @@ button.btn.btn-secondary {
     }
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   .navigation {
     & nav #navbar-top {
-      & ul.navbar-nav {
-      display: block;
+      & form {
+      margin-left: 0%;
+      }
     }
+  }
+}
+@media only screen and (max-width: 992px) {
+    .navigation {
+      & nav #navbar-top {
+        & ul.navbar-nav {
+        display: block;
+      }
     }
   }
 }
