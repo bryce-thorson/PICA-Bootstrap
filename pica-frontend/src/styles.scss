@@ -834,8 +834,8 @@ footer {
   }
 
   .login-landing--container {
-    padding: 4rem;
-
+    padding: 2rem 4rem;
+    max-width: 1600px;
     & .col-lg-9 {
       padding-left: 4rem;
 
@@ -852,6 +852,10 @@ footer {
             object-fit: cover;
             height: 400px;
             margin: 2rem 0;
+            & .cta-img {
+              width: 100%;
+              object-fit: cover;
+            }
           }
 
           & p {
@@ -868,7 +872,8 @@ footer {
 
           & label {
             font-weight: bold;
-            color: $gray--500;
+            color: $green--500;
+            padding-top: 1rem;
           }
 
           & .card {
@@ -900,3 +905,13 @@ footer {
       }
     }
   }
+  @media only screen and (max-width: 992px) {
+    .login-landing--container {
+      padding: 2rem;
+      & .col-lg-9 {
+      padding-left: 1rem;
+      padding-top: 2rem;
+
+    }
+  }
+}
