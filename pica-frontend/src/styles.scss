@@ -885,6 +885,7 @@ footer {
             margin: 0;
           }
 
+
           & .accordion {
             border-bottom: 1px solid rgba(0, 0, 0, .125);
           }
@@ -934,7 +935,13 @@ footer {
       & .col-lg-9 {
       padding-left: 1rem;
       padding-top: 2rem;
-
+      & .tab-content {
+        & .tab-pane {
+          & .policy {
+            padding-top: 2rem;
+          }
+        }
+      }
     }
   }
 }
