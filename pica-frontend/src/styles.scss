@@ -260,8 +260,52 @@ button.btn.btn-secondary {
     padding-right: 3.5rem;
 
     & ul.navbar-nav {
-      & li.nav-item a {
-        color: $green--500;
+      & li.nav-item {
+        & a {
+          color: $green--500;
+        }
+      }
+
+      & li.nav-item.dropdown.show {
+        background-color: $green--500;
+        position: relative;
+
+        & a {
+          color: white;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -0.5rem;
+          height: 1rem;
+          background-color: $green--500;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          height: 1rem;
+          background-color: $green--500;
+        }
+
+        & .dropdown-menu.show {
+          border-bottom: 1px solid $green--500;
+          border-left: 1px solid $green--500;
+          border-right: 1px solid $green--500;
+          border-top: none;
+          margin: 0.525rem 0 0;
+          border-radius: 0;
+          background-color: $green--500;
+
+          & a {
+            color: white;
+          }
+        }
       }
     }
   }
