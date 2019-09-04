@@ -304,6 +304,9 @@ button.btn.btn-secondary {
 
           & a {
             color: white;
+            &:hover {
+              color: $green--500;
+            }
           }
         }
       }
