@@ -76,6 +76,15 @@
   }
 }
 
+.arrow-up {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-arrow-up);
+  }
+}
+
 // Color variables
 $white: #ffffff;
 
@@ -1103,6 +1112,59 @@ footer {
   padding: 2rem 4rem;
   max-width: 1600px;
 
+  & .side-nav {
+    display: block;
+  }
+
+  & .login-landing-mobile-nav {
+    display: none;
+
+    & nav.navbar {
+      position: relative;
+      min-height: 3rem;
+    }
+
+    & .arrow-up {
+      color: $green--500;
+      width: 30px;
+      height: 30px;
+    }
+
+    & button.navbar-toggler {
+      position: absolute;
+      width: 100%;
+      top: 0rem;
+      height: 48px;
+
+      &::after {
+        content: 'Section Menu';
+        padding-left: 1rem;
+        color: $green--500;
+        height: 30px;
+      }
+    }
+
+    & button.navbar-toggler[aria-expanded="false"] {
+      left: 0;
+      right: 0;
+
+      & .arrow-up {
+        display: none;
+      }
+    }
+
+    & button.navbar-toggler[aria-expanded="true"] {
+      background-color: rgba(0, 112, 60, 0.05);
+      top: 0rem;
+      height: 56px;
+      border-bottom: none;
+
+      & .navbar-toggler-icon {
+        display: none;
+      }
+    }
+  }
+
   & .col-lg-9 {
     padding-left: 4rem;
 
@@ -1178,6 +1240,39 @@ footer {
 @media only screen and (max-width: 992px) {
   .login-landing--container {
     padding: 2rem;
+
+    & .side-nav {
+      display: none;
+    }
+
+    & .login-landing-mobile-nav {
+      display: block;
+
+      & nav.navbar {
+        border: 1px solid $green--500;
+        border-radius: 4px;
+
+        & .nav-menu {
+          & button span {
+            margin-top: -0.25rem;
+          }
+
+          & a.navbar-brand {
+            color: $green--500;
+          }
+        }
+
+        & #login-landing-mobile-nav {
+          margin-bottom: -8px;
+          margin-top: 2.5rem;
+          z-index: 10;
+        }
+      }
+
+      & .navbar-toggler {
+        border: none;
+      }
+    }
 
     & .col-lg-9 {
       padding-left: 1rem;
