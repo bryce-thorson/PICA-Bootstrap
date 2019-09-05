@@ -304,6 +304,7 @@ button.btn.btn-secondary {
 
           & a {
             color: white;
+
             &:hover {
               color: $green--500;
             }
@@ -348,9 +349,59 @@ button.btn.btn-secondary {
         margin-top: 1rem;
       }
 
-      & .nav-link,
-      & .dropdown-item {
-        color: $green--500;
+      & ul.navbar-nav {
+        & li.nav-item {
+          & a {
+            color: $green--500;
+            padding-left: 1rem;
+          }
+        }
+
+        & li.nav-item.dropdown.show {
+          background-color: $green--500;
+          position: relative;
+
+          & a {
+            color: white;
+          }
+
+          // &::before {
+          //   content: '';
+          //   position: absolute;
+          //   left: 0;
+          //   right: 0;
+          //   top: -0.5rem;
+          //   height: 1rem;
+          //   background-color: $green--500;
+          // }
+
+          // &::after {
+          //   content: '';
+          //   position: absolute;
+          //   left: 0;
+          //   right: 0;
+          //   height: 1rem;
+          //   background-color: $green--500;
+          // }
+
+          & .dropdown-menu.show {
+            border-bottom: 1px solid $green--300;
+            border-left: 1px solid $green--300;
+            border-right: 1px solid $green--300;
+            border-top: none;
+            margin: 0.525rem 0 0;
+            border-radius: 0;
+            background-color: $green--300;
+
+            & a {
+              color: white;
+
+              &:hover {
+                color: $green--500;
+              }
+            }
+          }
+        }
       }
 
       & .access-module {
