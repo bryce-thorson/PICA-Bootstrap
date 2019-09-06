@@ -309,13 +309,14 @@ button.btn.btn-secondary {
           border-top: none;
           margin: 0.525rem 0 0;
           border-radius: 0;
-          background-color: $green--500;
+          background-color: $green--300;
 
           & a {
             color: white;
 
             &:hover {
-              color: $green--500;
+              color: white;
+              background-color: $green--500;
             }
           }
         }
